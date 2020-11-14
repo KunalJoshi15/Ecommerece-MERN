@@ -1,0 +1,12 @@
+This is how the flow of the code goes.
+The front end will make the HTTP request to the backend. (The backend will return the JSON data to the frontend)
+GET is used for fetching data 
+POST is used for pushing the data
+
+Here we will be using the useEffect hook for fetching the data to the react code
+Color.js is used to configure the color into the console of one and the other,
+
+Let us Create an error handler code for the javascript we need to fetch the json information for the further steps.
+We want to give a 404 error when the page is not found.
+There are two types of states one is global level state and other is local
+Redux is used for the global level state.

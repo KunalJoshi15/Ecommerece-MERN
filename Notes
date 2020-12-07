@@ -1,0 +1,7 @@
+The first thing in order to add the property using redux is creating the constant at the specified folder.
+After creating the constants we need to create the reducer file where it is to be used.
+Then add that particular in the store then form the actions that are to be performed.
+
+The property of the qty will only be shown when the item is in stock when it is not in stock then it will not be shown.
+? is used to make some property in the url as optional as sometimes it is not nessary for there to be a property.
+One particular  error that is to be noted is that reducer is not returning the default state due to which nothing got initialized.

@@ -8,5 +8,8 @@ Color.js is used to configure the color into the console of one and the other,
 
 Let us Create an error handler code for the javascript we need to fetch the json information for the further steps.
 We want to give a 404 error when the page is not found.
-There are two types of states one is global level state and other is local
-Redux is used for the global level state.
+There are two types of states one is global level state and other is component level state.
+
+Actions will pass the information to the reducer and then the reducer will send the appropriate state information 
+to the components.
+For setting up redux we require the redux react-redux redux-thunk and redux-devtools-extension

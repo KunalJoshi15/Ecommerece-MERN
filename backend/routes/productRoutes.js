@@ -9,6 +9,7 @@ import asyncHandler from 'express-async-handler'
 router.get('/',asyncHandler(async (req,res)=>{
     const products = await Product.find({})
     // This will fetch us all the products
+//    throw new Error('Some Error') 
     res.json(products)
 }))
 // @desc Fetch particular product

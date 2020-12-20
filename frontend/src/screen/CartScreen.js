@@ -4,6 +4,7 @@ import Message from '../components/Message'
 import { Link } from 'react-router-dom'
 import { addToCart,removeFromCart } from '../actions/cartActions'
 import { Row,Col,ListGroup,Image,Form,Button,Card } from 'react-bootstrap'
+
 const CartScreen = ({ match,location,history }) => {
     const productId = match.params.id
     const qty = location.search ? Number(location.search.split('=')[1]):1
@@ -21,7 +22,7 @@ const CartScreen = ({ match,location,history }) => {
         dispatch(removeFromCart(id))
     }
     const checkoutHandler = ()=>{
-        history.push('/login?reqdirect=shipping')
+        history.push('/login?redirect=shipping')
     }
     return (
         <Row>

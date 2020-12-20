@@ -13,3 +13,8 @@ There are two types of states one is global level state and other is component l
 Actions will pass the information to the reducer and then the reducer will send the appropriate state information 
 to the components.
 For setting up redux we require the redux react-redux redux-thunk and redux-devtools-extension
+JSON web tokens are used to do the authorization part as it helps us in accessing the routes which are not accessible.
+Authorization to a certain route can be applied using the JSON web token.
+(Middleware is used in order to achieve this.)
+
+In order to use the routes perfectly we will have to use the JWT token for it.

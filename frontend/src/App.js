@@ -11,13 +11,14 @@ import ProfileScreen from './screen/ProfileScreen';
 import ShippingScreen from './screen/ShippingScreen'
 import PaymentScreen from './screen/PaymentScreen';
 import PlaceOrderScreen from './screen/PlaceOrderScreen';
-
+import OrderScreen from './screen/OrderScreen';
 function App() {
   return (
     <Router>
       <Header/>
       <main>
         <Container>
+          <Route path='/order/:id' component={OrderScreen}/>
           <Route path='/payment' component={PaymentScreen}/>
           <Route path='/shipping' component={ShippingScreen}/>
           <Route path='/placeorder' component={PlaceOrderScreen}/>

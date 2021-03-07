@@ -7,7 +7,7 @@ export const addToCart = (id,qty) => async (dispatch,getState)=>{
     dispatch({
         type: CART_ADD_ITEM,
         payload: {
-            product:data._id,
+            product: data._id,
             name: data.name,
             price: data.price,
             countInStock: data.countInStock,
@@ -27,6 +27,7 @@ export const removeFromCart = (id)=>(dispatch,getState)=>{
 }
 
 export const saveShippingAddress = (data)=>(dispatch)=>{
+    console.log(data)
     dispatch({
         type: CART_SAVE_SHIPPING_ADDRESS,
         payload:data

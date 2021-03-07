@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const orderSchema = mongoose.Schema({
     user: {
-        type:mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         required:true,
         ref:'User'
     },
@@ -18,8 +18,8 @@ const orderSchema = mongoose.Schema({
                 ref:'Product'
             },
         }],
-            shippingAdderss:{
-                address: {type:String,required:true},
+        shippingAddress: {
+            address: {type:String,required:true},
                 city: {type:String,required:true},
                 postalCode: {type:String,required:true},
                 country: {type:String,required:true}
@@ -35,38 +35,38 @@ const orderSchema = mongoose.Schema({
                 email_address: {type:String}
             },
             taxPrice: {
-                type:Number,
+                type: Number,
                 required:true,
                 default:0.0
             },
             shippingPrice: {
-                type:Number,
+                type: Number,
                 required:true,
                 default:0.0
             },
             totalPrice: {
-                type:Number,
+                type: Number,
                 required:true,
                 default:0.0
             },
             isPaid:{
-                type:Boolean,
+                type: Boolean,
                 required:true,
                 default:false,
             },
             paidAt:{
-                type:Date
+                type: Date
             },
             isDelivered:{
-                type:Boolean,
+                type: Boolean,
                 required:true,
                 default:false
             },
             deliveredAt:{
-                type:Date
+                type: Date
             }
 },{
-    timestamps:true
+    timestamps: true
 })
 
 const Order = mongoose.model('Order',orderSchema)

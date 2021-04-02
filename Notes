@@ -5,3 +5,7 @@ Then add that particular in the store then form the actions that are to be perfo
 The property of the qty will only be shown when the item is in stock when it is not in stock then it will not be shown.
 ? is used to make some property in the url as optional as sometimes it is not nessary for there to be a property.
 One particular  error that is to be noted is that reducer is not returning the default state due to which nothing got initialized.
+
+For the image upload functionality in particular we will be using the multer package of npm for it.
+Using the multer functionality we will be uploading a particular file in a specific location as per our need.
+In case of the disk storage we pass the req,file and the callback then the callback itself is called.

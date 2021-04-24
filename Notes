@@ -9,3 +9,4 @@ One particular  error that is to be noted is that reducer is not returning the d
 For the image upload functionality in particular we will be using the multer package of npm for it.
 Using the multer functionality we will be uploading a particular file in a specific location as per our need.
 In case of the disk storage we pass the req,file and the callback then the callback itself is called.
+Morgan is the tool which provides us with the basic logging functionality.

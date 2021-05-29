@@ -7,7 +7,7 @@ import Message from '../components/Message'
 import { useDispatch,useSelector } from 'react-redux'
 import { listProductDetails,createProductReview } from '../actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants'
-
+import Meta from '../components/Meta'
 const ProductScreen = ({ history,match }) => {
     const [qty,setQty] = useState(1)
     const [rating,setRating] = useState(0)
@@ -39,6 +39,7 @@ const ProductScreen = ({ history,match }) => {
     }
     return (
         <>
+        <Meta title={product.name}/>
             <Link className='btn btn-light my-3' to='/'>Go Back</Link>
             {loading?<Loader/>:error?<Message variant='danger'>{error}</Message>:(
             <><Row>

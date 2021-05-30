@@ -1,12 +1,12 @@
 import React from 'react'
-import { Hemlet } from 'react-helmet'
+import { Helmet } from 'react-helmet'
 const Meta = ({title,description,keywords}) => {
     return (
-        <Hemlet>
+        <Helmet>
             <title>{title}</title>
             <meta name='description' content={description}/>
             <meta name='keyword' content={keywords}/>
-        </Hemlet>
+        </Helmet>
     )
 }
 
